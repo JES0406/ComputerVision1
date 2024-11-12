@@ -134,7 +134,7 @@ class ImageClassifier:
         # Format results and compute classification statistics
         results = Results(self._labels, dataset_name=dataset_name)
         accuracy, confusion_matrix, classification = results.compute(dataset, test_labels, predicted_labels)
-        results.print(accuracy, confusion_matrix)
+        # results.print(accuracy, confusion_matrix)
 
         if save:
             results.save(confusion_matrix, classification)
